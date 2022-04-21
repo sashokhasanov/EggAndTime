@@ -11,7 +11,10 @@ import SwiftUI
 struct EggAndTimeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                EggGridView()
+            }
+            .environmentObject(NavigationHelper())
         }
     }
 }

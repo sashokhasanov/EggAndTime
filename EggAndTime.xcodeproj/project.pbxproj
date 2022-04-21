@@ -8,17 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		2D0A0DC7281078EE0073B284 /* EggAndTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0DC6281078EE0073B284 /* EggAndTimeApp.swift */; };
-		2D0A0DC9281078EE0073B284 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0DC8281078EE0073B284 /* ContentView.swift */; };
 		2D0A0DCB281078F10073B284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A0DCA281078F10073B284 /* Assets.xcassets */; };
 		2D0A0DCE281078F10073B284 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A0DCD281078F10073B284 /* Preview Assets.xcassets */; };
+		2D0A0DD5281079120073B284 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0DD4281079120073B284 /* CardView.swift */; };
+		2D0A0DDB281084770073B284 /* EggGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0DDA281084770073B284 /* EggGridView.swift */; };
+		2D0A0DDD28108F2E0073B284 /* DonenessGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0DDC28108F2E0073B284 /* DonenessGridView.swift */; };
+		2D0A0DDF281092A40073B284 /* EggView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0DDE281092A40073B284 /* EggView.swift */; };
+		2D0A0DE128109ECB0073B284 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0DE028109ECB0073B284 /* Model.swift */; };
+		2D0A0DE32810A1660073B284 /* EggGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0DE22810A1660073B284 /* EggGridViewModel.swift */; };
+		2D0A0DE52810A4800073B284 /* DonenessGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0DE42810A4800073B284 /* DonenessGridViewModel.swift */; };
+		2D0A0DE72810AABD0073B284 /* DonenessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0DE62810AABD0073B284 /* DonenessView.swift */; };
+		2D0A0DE92810B7980073B284 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0DE82810B7980073B284 /* TimerView.swift */; };
+		2D0A0DEB28114EC00073B284 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0DEA28114EC00073B284 /* NavigationHelper.swift */; };
+		2D8A8D38281162E800030BDC /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A8D37281162E800030BDC /* TimerViewModel.swift */; };
+		2D8A8D3A28119E6600030BDC /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A8D3928119E6600030BDC /* ProgressView.swift */; };
+		2D8A8D3C2812073700030BDC /* EggViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A8D3B2812073700030BDC /* EggViewModel.swift */; };
+		2D8A8D3F2812078F00030BDC /* DonenessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A8D3E2812078F00030BDC /* DonenessViewModel.swift */; };
+		2D8A8D4428120BF500030BDC /* EggStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A8D4328120BF500030BDC /* EggStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D0A0DC3281078EE0073B284 /* EggAndTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggAndTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0A0DC6281078EE0073B284 /* EggAndTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggAndTimeApp.swift; sourceTree = "<group>"; };
-		2D0A0DC8281078EE0073B284 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D0A0DCA281078F10073B284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D0A0DCD281078F10073B284 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D0A0DD4281079120073B284 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2D0A0DDA281084770073B284 /* EggGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggGridView.swift; sourceTree = "<group>"; };
+		2D0A0DDC28108F2E0073B284 /* DonenessGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonenessGridView.swift; sourceTree = "<group>"; };
+		2D0A0DDE281092A40073B284 /* EggView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggView.swift; sourceTree = "<group>"; };
+		2D0A0DE028109ECB0073B284 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2D0A0DE22810A1660073B284 /* EggGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggGridViewModel.swift; sourceTree = "<group>"; };
+		2D0A0DE42810A4800073B284 /* DonenessGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonenessGridViewModel.swift; sourceTree = "<group>"; };
+		2D0A0DE62810AABD0073B284 /* DonenessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonenessView.swift; sourceTree = "<group>"; };
+		2D0A0DE82810B7980073B284 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		2D0A0DEA28114EC00073B284 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
+		2D8A8D37281162E800030BDC /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		2D8A8D3928119E6600030BDC /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		2D8A8D3B2812073700030BDC /* EggViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggViewModel.swift; sourceTree = "<group>"; };
+		2D8A8D3E2812078F00030BDC /* DonenessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonenessViewModel.swift; sourceTree = "<group>"; };
+		2D8A8D4328120BF500030BDC /* EggStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +79,16 @@
 		2D0A0DC5281078EE0073B284 /* EggAndTime */ = {
 			isa = PBXGroup;
 			children = (
-				2D0A0DC6281078EE0073B284 /* EggAndTimeApp.swift */,
-				2D0A0DC8281078EE0073B284 /* ContentView.swift */,
-				2D0A0DCA281078F10073B284 /* Assets.xcassets */,
+				2D8A8D362811606900030BDC /* Egg */,
+				2D8A8D352811602300030BDC /* EggGrid */,
+				2D8A8D3D2812077200030BDC /* Doneness */,
+				2D8A8D402812093100030BDC /* DonenessGrid */,
+				2D8A8D4228120AEA00030BDC /* Timer */,
+				2D8A8D4128120ACA00030BDC /* Model */,
+				2D8A8D4528120D1E00030BDC /* Helpers */,
+				2D8A8D4628120D5500030BDC /* CommonViews */,
+				2D8A8D4728120D8400030BDC /* Resources */,
+				2D8A8D4828120FAC00030BDC /* Startup */,
 				2D0A0DCC281078F10073B284 /* Preview Content */,
 			);
 			path = EggAndTime;
@@ -65,6 +100,93 @@
 				2D0A0DCD281078F10073B284 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2D8A8D352811602300030BDC /* EggGrid */ = {
+			isa = PBXGroup;
+			children = (
+				2D0A0DDA281084770073B284 /* EggGridView.swift */,
+				2D0A0DE22810A1660073B284 /* EggGridViewModel.swift */,
+			);
+			path = EggGrid;
+			sourceTree = "<group>";
+		};
+		2D8A8D362811606900030BDC /* Egg */ = {
+			isa = PBXGroup;
+			children = (
+				2D0A0DDE281092A40073B284 /* EggView.swift */,
+				2D8A8D3B2812073700030BDC /* EggViewModel.swift */,
+			);
+			path = Egg;
+			sourceTree = "<group>";
+		};
+		2D8A8D3D2812077200030BDC /* Doneness */ = {
+			isa = PBXGroup;
+			children = (
+				2D0A0DE62810AABD0073B284 /* DonenessView.swift */,
+				2D8A8D3E2812078F00030BDC /* DonenessViewModel.swift */,
+			);
+			path = Doneness;
+			sourceTree = "<group>";
+		};
+		2D8A8D402812093100030BDC /* DonenessGrid */ = {
+			isa = PBXGroup;
+			children = (
+				2D0A0DDC28108F2E0073B284 /* DonenessGridView.swift */,
+				2D0A0DE42810A4800073B284 /* DonenessGridViewModel.swift */,
+			);
+			path = DonenessGrid;
+			sourceTree = "<group>";
+		};
+		2D8A8D4128120ACA00030BDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D0A0DE028109ECB0073B284 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2D8A8D4228120AEA00030BDC /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				2D0A0DE82810B7980073B284 /* TimerView.swift */,
+				2D8A8D37281162E800030BDC /* TimerViewModel.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		2D8A8D4528120D1E00030BDC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2D0A0DEA28114EC00073B284 /* NavigationHelper.swift */,
+				2D8A8D4328120BF500030BDC /* EggStore.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2D8A8D4628120D5500030BDC /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				2D8A8D3928119E6600030BDC /* ProgressView.swift */,
+				2D0A0DD4281079120073B284 /* CardView.swift */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		2D8A8D4728120D8400030BDC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D0A0DCA281078F10073B284 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2D8A8D4828120FAC00030BDC /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				2D0A0DC6281078EE0073B284 /* EggAndTimeApp.swift */,
+			);
+			path = Startup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +259,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D0A0DC9281078EE0073B284 /* ContentView.swift in Sources */,
+				2D0A0DEB28114EC00073B284 /* NavigationHelper.swift in Sources */,
 				2D0A0DC7281078EE0073B284 /* EggAndTimeApp.swift in Sources */,
+				2D8A8D38281162E800030BDC /* TimerViewModel.swift in Sources */,
+				2D0A0DDF281092A40073B284 /* EggView.swift in Sources */,
+				2D8A8D3C2812073700030BDC /* EggViewModel.swift in Sources */,
+				2D0A0DE72810AABD0073B284 /* DonenessView.swift in Sources */,
+				2D0A0DE128109ECB0073B284 /* Model.swift in Sources */,
+				2D0A0DD5281079120073B284 /* CardView.swift in Sources */,
+				2D0A0DE92810B7980073B284 /* TimerView.swift in Sources */,
+				2D0A0DDD28108F2E0073B284 /* DonenessGridView.swift in Sources */,
+				2D0A0DE32810A1660073B284 /* EggGridViewModel.swift in Sources */,
+				2D8A8D3A28119E6600030BDC /* ProgressView.swift in Sources */,
+				2D8A8D3F2812078F00030BDC /* DonenessViewModel.swift in Sources */,
+				2D0A0DDB281084770073B284 /* EggGridView.swift in Sources */,
+				2D0A0DE52810A4800073B284 /* DonenessGridViewModel.swift in Sources */,
+				2D8A8D4428120BF500030BDC /* EggStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
