@@ -17,10 +17,7 @@ struct EggGridView: View {
     
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: columns,
-                      alignment: .center,
-                      spacing: 20) {
-                
+            LazyVGrid(columns: columns, alignment: .center, spacing: 20) {
                 ForEach(viewModel.cells, id: \.name) { cell in
                     NavigationLink(isActive: $navigationHelper.navigateToRootView) {
                         DonenessGridView(eggName: cell.name)
@@ -34,7 +31,7 @@ struct EggGridView: View {
         }
         .navigationTitle("Яйцо")
         .task {
-            await viewModel.fetchEggs()
+            await viewModel.fetchData()
         }
     }
 }

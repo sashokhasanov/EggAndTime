@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct EggView: View {
     let viewModel: EggViewModel
     

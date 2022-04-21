@@ -5,8 +5,6 @@
 //  Created by Сашок on 22.04.2022.
 //
 
-import Foundation
-
 class DonenessViewModel {
     var name: String {
         doneness.name

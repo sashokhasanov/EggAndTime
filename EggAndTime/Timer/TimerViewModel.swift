@@ -5,7 +5,6 @@
 //  Created by Сашок on 21.04.2022.
 //
 
-import Foundation
 import AVFoundation
 
 class TimerViewModel: ObservableObject {
@@ -42,10 +41,9 @@ class TimerViewModel: ObservableObject {
     private var donenessName: String = ""
     private var cookingTime: TimeInterval = 0
     
+    private var timerState: TimerState = .ready
     private var counter: TimeInterval = 0
     private var timer: Timer?
-    
-    private var timerState: TimerState = .ready
     
     lazy private var timeFormatter: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()
@@ -59,8 +57,9 @@ class TimerViewModel: ObservableObject {
     func fetchData(eggName: String, donenessName: String) async {
         self.eggName = eggName
         self.donenessName = donenessName
+        
         self.cookingTime = EggStore.doneness[eggName]?.first{ $0.name == donenessName }?.cookingTime ?? 0
-        resetTimer()
+        self.counter = self.cookingTime
         
         objectWillChange.send()
     }
@@ -79,15 +78,15 @@ class TimerViewModel: ObservableObject {
 
     // MARK: - Private methods
     private func startTimer() {
-        if counter > 0 {
-            timer = Timer.scheduledTimer(
-                timeInterval: 1,
-                target: self,
-                selector: #selector(updateCounter),
-                userInfo: nil,
-                repeats: true
-            )
+        guard counter > 0 else {
+            return
         }
+        
+        timer = Timer.scheduledTimer(timeInterval: 1,
+                                     target: self,
+                                     selector: #selector(updateCounter),
+                                     userInfo: nil,
+                                     repeats: true)
     }
     
     private func resetTimer() {

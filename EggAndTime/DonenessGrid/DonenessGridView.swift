@@ -19,13 +19,10 @@ struct DonenessGridView: View {
 
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: columns,
-                      alignment: .center,
-                      spacing: 20) {
-                
-                ForEach(viewModel.cells, id: \.name) { vm in
-                    NavigationLink(destination: TimerView(eggName: eggName, donenessName: vm.name)) {
-                        DonenessView(viewModel: vm)
+            LazyVGrid(columns: columns, alignment: .center, spacing: 20) {
+                ForEach(viewModel.cells, id: \.name) { cell in
+                    NavigationLink(destination: TimerView(eggName: eggName, donenessName: cell.name)) {
+                        DonenessView(viewModel: cell)
                     }
                     .isDetailLink(false)
                 }
@@ -34,7 +31,7 @@ struct DonenessGridView: View {
         }
         .navigationTitle("Время")
         .task {
-            await viewModel.fetchDoneness(eggName: eggName)
+            await viewModel.fetchData(eggName: eggName)
         }
     }
     

@@ -5,8 +5,6 @@
 //  Created by Сашок on 22.04.2022.
 //
 
-import Foundation
-
 class EggViewModel {
     var name: String {
         egg.name

@@ -10,9 +10,9 @@ import Foundation
 class DonenessGridViewModel: ObservableObject {
     @Published var cells: [DonenessViewModel] = []
     
-    func fetchDoneness(eggName: String) async {
+    func fetchData(eggName: String) async {
         if let doneness = EggStore.doneness[eggName] {
-            self.cells = doneness.map { DonenessViewModel($0) }
+            cells = doneness.map { DonenessViewModel($0) }
         }
     }
 }

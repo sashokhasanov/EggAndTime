@@ -17,5 +17,3 @@ struct Egg {
     let name: String
     let imageName: String
 }
-
-
