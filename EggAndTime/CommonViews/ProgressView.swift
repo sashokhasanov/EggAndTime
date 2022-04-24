@@ -19,14 +19,17 @@ struct ProgressView: View {
             let width = geometry.size.width
             let height = geometry.size.height
             
-            makeEggPath(width: width, height: height)
-                .stroke(lineWidth: lineWidth)
-                .foregroundColor(baseColor)
-                .overlay(makeEggPath(width: width, height: height)
-                            .trim(from: timerViewModel.progress, to: 1)
-                            .stroke(style: StrokeStyle(lineWidth: lineWidth, lineCap: .round, lineJoin:.round))
-                            .foregroundColor(progressColor)
-                            .animation(.linear(duration: 1), value: timerViewModel.progress))
+            ZStack {
+                makeEggPath(width: width, height: height)
+                    .stroke(lineWidth: lineWidth)
+                    .foregroundColor(baseColor)
+                
+                makeEggPath(width: width, height: height)
+                    .trim(from: timerViewModel.progress, to: 1)
+                    .stroke(style: StrokeStyle(lineWidth: lineWidth, lineCap: .round, lineJoin:.round))
+                    .foregroundColor(progressColor)
+                    .animation(.linear(duration: 1), value: timerViewModel.progress)
+            }
         }
     }
     

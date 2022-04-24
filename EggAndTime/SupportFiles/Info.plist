@@ -10,6 +10,8 @@
 		<string>Launch</string>
 		<key>UILaunchScreen</key>
 		<dict/>
+		<key>UIImageRespectsSafeAreaInsets</key>
+		<true/>
 	</dict>
 </dict>
 </plist>

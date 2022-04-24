@@ -7,42 +7,57 @@
 
 class EggStore {
     static let eggs = [
-        Egg(name: "Куриное", imageName: "EggPlaceholder"),
-        Egg(name: "Утиное", imageName: "EggPlaceholder"),
-        Egg(name: "Гусиное", imageName: "EggPlaceholder"),
-        Egg(name: "Страусиное", imageName: "EggPlaceholder"),
-        Egg(name: "Перепелиное", imageName: "EggPlaceholder")
+        Egg(name: "Куриное", imageName: "Chicken"),
+        Egg(name: "Утиное", imageName: "Duck"),
+        Egg(name: "Гусиное", imageName: "Goose"),
+        Egg(name: "Страусиное", imageName: "Ostrich"),
+        Egg(name: "Перепелиное", imageName: "Quail")
     ]
     
     static let doneness = [
         "Куриное" : [
-            Doneness(name: "Вкрутую", imageName: "EggPlaceholder", cookingTime: 10),
-            Doneness(name: "Всмятку", imageName: "EggPlaceholder", cookingTime: 20),
-            Doneness(name: "Пашот", imageName: "EggPlaceholder", cookingTime: 30)
+            Doneness(name: "Всмятку", imageName: "D1", cookingTime: 180),
+            Doneness(name: "В мешочек", imageName: "D2", cookingTime: 300),
+            Doneness(name: "Жидкий желток", imageName: "D3", cookingTime: 360),
+            Doneness(name: "Золотая середина", imageName: "D4", cookingTime: 420),
+            Doneness(name: "Почти вкрутую", imageName: "D5", cookingTime: 480),
+            Doneness(name: "Вкрутую", imageName: "D6", cookingTime: 540)
         ],
         
         "Утиное" : [
-            Doneness(name: "Вкрутую", imageName: "EggPlaceholder", cookingTime: 10),
-            Doneness(name: "Всмятку", imageName: "EggPlaceholder", cookingTime: 20),
-            Doneness(name: "Пашот", imageName: "EggPlaceholder", cookingTime: 30)
+            Doneness(name: "Всмятку", imageName: "D1", cookingTime: 180),
+            Doneness(name: "В мешочек", imageName: "D2", cookingTime: 300),
+            Doneness(name: "Жидкий желток", imageName: "D3", cookingTime: 360),
+            Doneness(name: "Золотая середина", imageName: "D4", cookingTime: 420),
+            Doneness(name: "Почти вкрутую", imageName: "D5", cookingTime: 480),
+            Doneness(name: "Вкрутую", imageName: "D6", cookingTime: 540)
         ],
         
         "Гусиное" : [
-            Doneness(name: "Вкрутую", imageName: "EggPlaceholder", cookingTime: 10),
-            Doneness(name: "Всмятку", imageName: "EggPlaceholder", cookingTime: 20),
-            Doneness(name: "Пашот", imageName: "EggPlaceholder", cookingTime: 30)
+            Doneness(name: "Всмятку", imageName: "D1", cookingTime: 180),
+            Doneness(name: "В мешочек", imageName: "D2", cookingTime: 300),
+            Doneness(name: "Жидкий желток", imageName: "D3", cookingTime: 360),
+            Doneness(name: "Золотая середина", imageName: "D4", cookingTime: 420),
+            Doneness(name: "Почти вкрутую", imageName: "D5", cookingTime: 480),
+            Doneness(name: "Вкрутую", imageName: "D6", cookingTime: 540)
         ],
         
         "Страусиное" : [
-            Doneness(name: "Вкрутую", imageName: "EggPlaceholder", cookingTime: 10),
-            Doneness(name: "Всмятку", imageName: "EggPlaceholder", cookingTime: 20),
-            Doneness(name: "Пашот", imageName: "EggPlaceholder", cookingTime: 30)
+            Doneness(name: "Всмятку", imageName: "D1", cookingTime: 180),
+            Doneness(name: "В мешочек", imageName: "D2", cookingTime: 300),
+            Doneness(name: "Жидкий желток", imageName: "D3", cookingTime: 360),
+            Doneness(name: "Золотая середина", imageName: "D4", cookingTime: 420),
+            Doneness(name: "Почти вкрутую", imageName: "D5", cookingTime: 480),
+            Doneness(name: "Вкрутую", imageName: "D6", cookingTime: 540)
         ],
         
         "Перепелиное" : [
-            Doneness(name: "Вкрутую", imageName: "EggPlaceholder", cookingTime: 10),
-            Doneness(name: "Всмятку", imageName: "EggPlaceholder", cookingTime: 20),
-            Doneness(name: "Пашот", imageName: "EggPlaceholder", cookingTime: 30)
+            Doneness(name: "Всмятку", imageName: "D1", cookingTime: 180),
+            Doneness(name: "В мешочек", imageName: "D2", cookingTime: 300),
+            Doneness(name: "Жидкий желток", imageName: "D3", cookingTime: 360),
+            Doneness(name: "Золотая середина", imageName: "D4", cookingTime: 420),
+            Doneness(name: "Почти вкрутую", imageName: "D5", cookingTime: 480),
+            Doneness(name: "Вкрутую", imageName: "D6", cookingTime: 540)
         ]
     ]
 }

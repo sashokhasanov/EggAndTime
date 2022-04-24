@@ -22,7 +22,7 @@ class TimerViewModel: ObservableObject {
     }
     
     var progress: Double {
-        counter / cookingTime
+        cookingTime == 0 ? 1 : counter / cookingTime
     }
     
     var buttonTitle: String {
