@@ -50,7 +50,7 @@ struct TimerView: View {
             Spacer()
             
             Button("На главную") {
-                navigationHelper.navigateToRootView = false
+                navigationHelper.rootLinkIsActive = false
             }
             .font(.system(size: 20))
             .padding()

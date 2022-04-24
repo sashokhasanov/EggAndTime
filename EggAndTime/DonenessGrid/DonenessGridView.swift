@@ -29,7 +29,7 @@ struct DonenessGridView: View {
             }
             .padding()
         }
-        .navigationTitle("Время")
+        .navigationTitle(eggName)
         .task {
             await viewModel.fetchData(eggName: eggName)
         }

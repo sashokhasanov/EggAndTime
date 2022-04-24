@@ -28,7 +28,7 @@ struct ProgressView: View {
                     .trim(from: timerViewModel.progress, to: 1)
                     .stroke(style: StrokeStyle(lineWidth: lineWidth, lineCap: .round, lineJoin:.round))
                     .foregroundColor(progressColor)
-                    .animation(.linear(duration: 1), value: timerViewModel.progress)
+                    .animation(.linear(duration: 0.3), value: timerViewModel.progress)
             }
         }
     }

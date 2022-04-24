@@ -14,6 +14,14 @@ struct EggAndTimeApp: App {
             NavigationView {
                 EggGridView()
             }
+            .task {
+                do {
+                    try await UNUserNotificationCenter.current()
+                        .requestAuthorization(options: [.badge, .sound, .alert])
+                } catch {
+                    print(error)
+                }
+            }
             .environmentObject(NavigationHelper())
         }
     }

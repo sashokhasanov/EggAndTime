@@ -10,6 +10,7 @@ import SwiftUI
 struct EggGridView: View {
     @EnvironmentObject var navigationHelper: NavigationHelper
     @StateObject private var viewModel: EggGridViewModel = EggGridViewModel()
+    @State private var selectedEgg = ""
 
     private var columns = [
         GridItem(.adaptive(minimum: 150, maximum: 300), spacing: 20, alignment: .center)
@@ -17,14 +18,21 @@ struct EggGridView: View {
     
     var body: some View {
         ScrollView {
+            
+            NavigationLink(destination: DonenessGridView(eggName: selectedEgg),
+                           isActive: $navigationHelper.rootLinkIsActive) {
+                EmptyView()
+            }
+            .isDetailLink(false)
+            
             LazyVGrid(columns: columns, alignment: .center, spacing: 20) {
                 ForEach(viewModel.cells, id: \.name) { cell in
-                    NavigationLink(isActive: $navigationHelper.navigateToRootView) {
-                        DonenessGridView(eggName: cell.name)
+                    Button {
+                        selectedEgg = cell.name
+                        navigationHelper.rootLinkIsActive = true
                     } label: {
                         EggView(viewModel: cell)
                     }
-                    .isDetailLink(false)
                 }
             }
             .padding()

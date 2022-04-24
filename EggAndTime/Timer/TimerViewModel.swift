@@ -6,6 +6,7 @@
 //
 
 import AVFoundation
+import UserNotifications
 
 class TimerViewModel: ObservableObject {
     // MARK: - Internal properties
@@ -37,6 +38,8 @@ class TimerViewModel: ObservableObject {
     }
     
     // MARK: - Private properties
+    private let notificationId = Bundle.main.bundleIdentifier ?? "ru.awesome.EggAndTime"
+    
     private var eggName: String = ""
     private var donenessName: String = ""
     private var cookingTime: TimeInterval = 0
@@ -68,8 +71,12 @@ class TimerViewModel: ObservableObject {
         switch timerState {
         case .ready:
             startTimer()
+            scheduleNotification()
             timerState = .running
-        case .running, .done:
+        case .running:
+            removeScheduledNotification()
+            fallthrough
+        case .done:
             resetTimer()
         }
         
@@ -110,6 +117,21 @@ class TimerViewModel: ObservableObject {
         }
         
         objectWillChange.send()
+    }
+    
+    private func scheduleNotification() {
+        let content = UNMutableNotificationContent()
+        content.title = "Ко-ко-ко!"
+        content.body = "Яйцо сварилось"
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: cookingTime, repeats: false)
+        let req = UNNotificationRequest(identifier: notificationId, content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
+    }
+    
+    private func removeScheduledNotification() {
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [notificationId])
     }
 }
 

@@ -8,5 +8,5 @@
 import Foundation
 
 class NavigationHelper: ObservableObject {
-    @Published var navigateToRootView = false
+    @Published var rootLinkIsActive = false
 }
