@@ -96,7 +96,6 @@
 				2D8A8D4628120D5500030BDC /* CommonViews */,
 				2D8A8D4728120D8400030BDC /* Resources */,
 				2D8A8D4828120FAC00030BDC /* Startup */,
-				2D8A8D4A28157E4100030BDC /* SupportFiles */,
 				2D0A0DCC281078F10073B284 /* Preview Content */,
 			);
 			path = EggAndTime;
@@ -197,13 +196,6 @@
 				2D0A0DC6281078EE0073B284 /* EggAndTimeApp.swift */,
 			);
 			path = Startup;
-			sourceTree = "<group>";
-		};
-		2D8A8D4A28157E4100030BDC /* SupportFiles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 		2D8F86192816AE600013FD4E /* LaunchScreen */ = {
