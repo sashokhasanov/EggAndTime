@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TimerView: View {
+    @Environment(\.scenePhase) var scenePhase
+    
     @EnvironmentObject var navigationHelper: NavigationHelper
     @StateObject var viewModel: TimerViewModel = TimerViewModel()
     
@@ -44,7 +46,7 @@ struct TimerView: View {
                 }
                 .frame(width: 200, height: 50)
                 .background(Color.red)
-                .cornerRadius(25)
+                .clipShape(Capsule())
             }
             
             Spacer()
@@ -52,6 +54,7 @@ struct TimerView: View {
             Button("На главную") {
                 navigationHelper.rootLinkIsActive = false
             }
+            .disabled(viewModel.isRunning)
             .font(.system(size: 20))
             .padding()
         }

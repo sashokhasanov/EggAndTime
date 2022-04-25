@@ -25,6 +25,8 @@
 		2D8A8D3C2812073700030BDC /* EggViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A8D3B2812073700030BDC /* EggViewModel.swift */; };
 		2D8A8D3F2812078F00030BDC /* DonenessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A8D3E2812078F00030BDC /* DonenessViewModel.swift */; };
 		2D8A8D4428120BF500030BDC /* EggStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A8D4328120BF500030BDC /* EggStore.swift */; };
+		2D8F86142816A7500013FD4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F86132816A7500013FD4E /* AppDelegate.swift */; };
+		2D8F86162816AAFF0013FD4E /* Rooster-Crow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F86152816AAFF0013FD4E /* Rooster-Crow.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		2D8A8D3E2812078F00030BDC /* DonenessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonenessViewModel.swift; sourceTree = "<group>"; };
 		2D8A8D4328120BF500030BDC /* EggStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggStore.swift; sourceTree = "<group>"; };
 		2D8A8D492815799E00030BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D8F86132816A7500013FD4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D8F86152816AAFF0013FD4E /* Rooster-Crow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rooster-Crow.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,7 @@
 		2D8A8D4728120D8400030BDC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D8F86152816AAFF0013FD4E /* Rooster-Crow.mp3 */,
 				2D0A0DCA281078F10073B284 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -186,6 +191,7 @@
 		2D8A8D4828120FAC00030BDC /* Startup */ = {
 			isa = PBXGroup;
 			children = (
+				2D8F86132816A7500013FD4E /* AppDelegate.swift */,
 				2D0A0DC6281078EE0073B284 /* EggAndTimeApp.swift */,
 			);
 			path = Startup;
@@ -259,6 +265,7 @@
 			files = (
 				2D0A0DCE281078F10073B284 /* Preview Assets.xcassets in Resources */,
 				2D0A0DCB281078F10073B284 /* Assets.xcassets in Resources */,
+				2D8F86162816AAFF0013FD4E /* Rooster-Crow.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +287,7 @@
 				2D0A0DE92810B7980073B284 /* TimerView.swift in Sources */,
 				2D0A0DDD28108F2E0073B284 /* DonenessGridView.swift in Sources */,
 				2D0A0DE32810A1660073B284 /* EggGridViewModel.swift in Sources */,
+				2D8F86142816A7500013FD4E /* AppDelegate.swift in Sources */,
 				2D8A8D3A28119E6600030BDC /* ProgressView.swift in Sources */,
 				2D8A8D3F2812078F00030BDC /* DonenessViewModel.swift in Sources */,
 				2D0A0DDB281084770073B284 /* EggGridView.swift in Sources */,

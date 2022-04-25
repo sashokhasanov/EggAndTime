@@ -19,7 +19,7 @@ class TimerViewModel: ObservableObject {
     }
     
     var timerText: String {
-        timeFormatter.string(from: counter) ?? "00:00:00"
+        return timeFormatter.string(from: counter) ?? "00:00:00"
     }
     
     var progress: Double {
@@ -37,6 +37,10 @@ class TimerViewModel: ObservableObject {
         }
     }
     
+    var isRunning: Bool {
+        timerState == .running
+    }
+    
     // MARK: - Private properties
     private let notificationId = Bundle.main.bundleIdentifier ?? "ru.awesome.EggAndTime"
     
@@ -45,8 +49,13 @@ class TimerViewModel: ObservableObject {
     private var cookingTime: TimeInterval = 0
     
     private var timerState: TimerState = .ready
-    private var counter: TimeInterval = 0
+    private var counter: TimeInterval {
+        max(0, cookingTime - elapsedTime)
+    }
     private var timer: Timer?
+    
+    private var startTime = TimeInterval()
+    private var elapsedTime = TimeInterval()
     
     lazy private var timeFormatter: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()
@@ -60,9 +69,7 @@ class TimerViewModel: ObservableObject {
     func fetchData(eggName: String, donenessName: String) async {
         self.eggName = eggName
         self.donenessName = donenessName
-        
         self.cookingTime = EggStore.doneness[eggName]?.first{ $0.name == donenessName }?.cookingTime ?? 0
-        self.counter = self.cookingTime
         
         objectWillChange.send()
     }
@@ -85,10 +92,11 @@ class TimerViewModel: ObservableObject {
 
     // MARK: - Private methods
     private func startTimer() {
-        guard counter > 0 else {
+        guard cookingTime > 0 else {
             return
         }
         
+        startTime = Date.timeIntervalSinceReferenceDate
         timer = Timer.scheduledTimer(timeInterval: 1,
                                      target: self,
                                      selector: #selector(updateCounter),
@@ -97,22 +105,21 @@ class TimerViewModel: ObservableObject {
     }
     
     private func resetTimer() {
-        killTimer()
-        counter = cookingTime
+        stopTimer()
+        elapsedTime = 0
         timerState = .ready
     }
     
-    private func killTimer() {
+    private func stopTimer() {
         timer?.invalidate()
         timer = nil
     }
     
     @objc private func updateCounter() {
-        if counter > 0 {
-            counter -= 1
-        } else {
-            AudioServicesPlayAlertSound(SystemSoundID(1304))
-            killTimer()
+        elapsedTime = (Date.timeIntervalSinceReferenceDate - startTime).rounded()
+        
+        if elapsedTime >= cookingTime {
+            stopTimer()
             timerState = .done
         }
         
@@ -123,6 +130,7 @@ class TimerViewModel: ObservableObject {
         let content = UNMutableNotificationContent()
         content.title = "Ко-ко-ко!"
         content.body = "Яйцо сварилось"
+        content.sound = UNNotificationSound(named: UNNotificationSoundName("Rooster-Crow.mp3"))
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: cookingTime, repeats: false)
         let req = UNNotificationRequest(identifier: notificationId, content: content, trigger: trigger)
