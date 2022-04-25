@@ -13,7 +13,7 @@ struct EggGridView: View {
     @State private var selectedEgg = ""
 
     private var columns = [
-        GridItem(.adaptive(minimum: 150, maximum: 300), spacing: 20, alignment: .center)
+        GridItem(.adaptive(minimum: 160), spacing: 17, alignment: .center)
     ]
     
     var body: some View {
@@ -25,7 +25,7 @@ struct EggGridView: View {
             }
             .isDetailLink(false)
             
-            LazyVGrid(columns: columns, alignment: .center, spacing: 20) {
+            LazyVGrid(columns: columns, alignment: .center, spacing: 17) {
                 ForEach(viewModel.cells, id: \.name) { cell in
                     Button {
                         selectedEgg = cell.name

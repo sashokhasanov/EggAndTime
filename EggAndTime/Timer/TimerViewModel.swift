@@ -128,7 +128,7 @@ class TimerViewModel: ObservableObject {
     
     private func scheduleNotification() {
         let content = UNMutableNotificationContent()
-        content.title = "Ко-ко-ко!"
+        content.title = "Ко-ко-ко"
         content.body = "Яйцо сварилось"
         content.sound = UNNotificationSound(named: UNNotificationSoundName("Rooster-Crow.mp3"))
         

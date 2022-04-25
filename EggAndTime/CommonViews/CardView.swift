@@ -11,7 +11,7 @@ struct CardView: View {
     let text: String
     let imageName: String
     
-    init(text: String = "Текст", imageName: String = "EggPlaceholder") {
+    init(text: String = "золотая середина", imageName: String = "EggPlaceholder") {
         self.text = text
         self.imageName = imageName
     }
@@ -30,8 +30,10 @@ struct CardView: View {
                 Text(text)
                     .font(.callout)
                     .foregroundColor(.gray)
+                    .lineLimit(1)
             }
-            .padding()
+            .padding(.vertical)
+            .padding(.horizontal, 6.0)
         }
         .aspectRatio(1, contentMode: .fit)
     }
@@ -39,6 +41,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView().frame(width: 150, height: 150)
+        CardView().frame(width: 160, height: 160)
     }
 }

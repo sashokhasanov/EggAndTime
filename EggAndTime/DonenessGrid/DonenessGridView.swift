@@ -12,14 +12,14 @@ struct DonenessGridView: View {
     @StateObject private var viewModel: DonenessGridViewModel = DonenessGridViewModel()
     
     private var columns = [
-        GridItem(.adaptive(minimum: 150, maximum: 300), spacing: 20, alignment: .center)
+        GridItem(.adaptive(minimum: 160), spacing: 17, alignment: .center)
     ]
     
     private let eggName: String
 
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: columns, alignment: .center, spacing: 20) {
+            LazyVGrid(columns: columns, alignment: .center, spacing: 17) {
                 ForEach(viewModel.cells, id: \.name) { cell in
                     NavigationLink(destination: TimerView(eggName: eggName, donenessName: cell.name)) {
                         DonenessView(viewModel: cell)
@@ -42,6 +42,10 @@ struct DonenessGridView: View {
 
 struct DonenessesView_Previews: PreviewProvider {
     static var previews: some View {
-        DonenessGridView(eggName: "Куриное")
+        Group {
+            DonenessGridView(eggName: "Куриное")
+            DonenessGridView(eggName: "Куриное")
+                .previewDevice("iPhone SE (2nd generation)")
+        }
     }
 }

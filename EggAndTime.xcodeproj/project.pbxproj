@@ -27,6 +27,7 @@
 		2D8A8D4428120BF500030BDC /* EggStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A8D4328120BF500030BDC /* EggStore.swift */; };
 		2D8F86142816A7500013FD4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F86132816A7500013FD4E /* AppDelegate.swift */; };
 		2D8F86162816AAFF0013FD4E /* Rooster-Crow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F86152816AAFF0013FD4E /* Rooster-Crow.mp3 */; };
+		2D8F86182816AD430013FD4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F86172816AD430013FD4E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +50,9 @@
 		2D8A8D3B2812073700030BDC /* EggViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggViewModel.swift; sourceTree = "<group>"; };
 		2D8A8D3E2812078F00030BDC /* DonenessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonenessViewModel.swift; sourceTree = "<group>"; };
 		2D8A8D4328120BF500030BDC /* EggStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggStore.swift; sourceTree = "<group>"; };
-		2D8A8D492815799E00030BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D8F86132816A7500013FD4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D8F86152816AAFF0013FD4E /* Rooster-Crow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rooster-Crow.mp3"; sourceTree = "<group>"; };
+		2D8F86172816AD430013FD4E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 		2D0A0DC5281078EE0073B284 /* EggAndTime */ = {
 			isa = PBXGroup;
 			children = (
+				2D8F86192816AE600013FD4E /* LaunchScreen */,
 				2D8A8D362811606900030BDC /* Egg */,
 				2D8A8D352811602300030BDC /* EggGrid */,
 				2D8A8D3D2812077200030BDC /* Doneness */,
@@ -200,9 +202,16 @@
 		2D8A8D4A28157E4100030BDC /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				2D8A8D492815799E00030BDC /* Info.plist */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		2D8F86192816AE600013FD4E /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F86172816AD430013FD4E /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0A0DCE281078F10073B284 /* Preview Assets.xcassets in Resources */,
+				2D8F86182816AD430013FD4E /* LaunchScreen.storyboard in Resources */,
 				2D0A0DCB281078F10073B284 /* Assets.xcassets in Resources */,
 				2D8F86162816AAFF0013FD4E /* Rooster-Crow.mp3 in Resources */,
 			);
@@ -426,10 +436,11 @@
 				DEVELOPMENT_TEAM = HUN84826YQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EggAndTime/SupportFiles/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Яйцо & время";
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Яйцо и время";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -458,10 +469,11 @@
 				DEVELOPMENT_TEAM = HUN84826YQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EggAndTime/SupportFiles/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Яйцо & время";
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Яйцо и время";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;

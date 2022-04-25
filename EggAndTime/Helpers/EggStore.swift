@@ -10,8 +10,8 @@ class EggStore {
         Egg(name: "Куриное", imageName: "Chicken"),
         Egg(name: "Утиное", imageName: "Duck"),
         Egg(name: "Гусиное", imageName: "Goose"),
-        Egg(name: "Страусиное", imageName: "Ostrich"),
-        Egg(name: "Перепелиное", imageName: "Quail")
+        Egg(name: "Перепелиное", imageName: "Quail"),
+        Egg(name: "Страусиное", imageName: "Ostrich")
     ]
     
     static let doneness = [
@@ -42,7 +42,7 @@ class EggStore {
             Doneness(name: "Вкрутую", imageName: "D6", cookingTime: 540)
         ],
         
-        "Страусиное" : [
+        "Перепелиное" : [
             Doneness(name: "Всмятку", imageName: "D1", cookingTime: 180),
             Doneness(name: "В мешочек", imageName: "D2", cookingTime: 300),
             Doneness(name: "Жидкий желток", imageName: "D3", cookingTime: 360),
@@ -51,7 +51,7 @@ class EggStore {
             Doneness(name: "Вкрутую", imageName: "D6", cookingTime: 540)
         ],
         
-        "Перепелиное" : [
+        "Страусиное" : [
             Doneness(name: "Всмятку", imageName: "D1", cookingTime: 180),
             Doneness(name: "В мешочек", imageName: "D2", cookingTime: 300),
             Doneness(name: "Жидкий желток", imageName: "D3", cookingTime: 360),
